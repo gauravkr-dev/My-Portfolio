@@ -8,50 +8,32 @@ export const AboutSection = () => {
                     About <span className="text-primary">Me</span>
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="space-y-6">
-                        <h3 className="text-2xl font-bold">Passionate web Developer & Tech Creator</h3>
-                        <p className="text-muted-foreground">
-                            I'm Gaurav Kumar, a dedicated full-stack web developer with a passion for crafting efficient and scalable digital solutions. With expertise in both front-end and back-end technologies, I specialize in building responsive web applications that deliver exceptional user experiences. My approach combines clean code, clear thinking, and a focus on real-world impact to create products that not only meet but exceed client expectations.
+                    <div className="grid grid-cols-1 gap-6">
+                        <img src="/MyPhoto.png" alt="My Photo" className="rounded-full shadow-sm h-[300px] md:h-[400px] w-auto" />
+
+                    </div>
+                    <div className="space-y-4">
+                        <h3 className="text-2xl font-bold">Passionate web Developer & Project Manager</h3>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I am a first-year student at <span className="text-primary font-bold">IIT Guwahati</span> with a strong passion for modern web development.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I enjoy building <span className="text-primary font-bold">clean</span>, <span className="text-primary font-bold">fast</span>, and <span className="text-primary font-bold">user-friendly</span> web applications using <span className="text-primary font-bold">modern technologies</span>.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I like learning how real-world products are built and continuously improving my skills through projects.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I believe in writing <span className="text-primary font-bold">simple</span>, <span className="text-primary font-bold">efficient code</span> and <span className="text-primary font-bold">growing</span>  every day as a <span className="text-primary font-bold">developer</span> and as a <span className="text-primary font-bold">person</span>.
+                        </p>
+                        <p className="text-muted-foreground leading-relaxed text-justify">
+                            I am <span className="text-primary font-bold">curious</span>, <span className="text-primary font-bold">motivated</span>, and always ready to learn <span className="text-primary font-bold">new things</span>.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
                             <a href="contact" className="cosmic-button">Get In Touch</a>
                         </div>
                     </div>
-                    <div className="grid grid-cols-1 gap-6">
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Code className="h-6 w-6" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-bold text-lg">Web Development</h4>
-                                    <p className="text-sm text-muted-foreground">Building responsive and dynamic web applications.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <User className="h-6 w-6" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-bold text-lg">UI/UX Design</h4>
-                                    <p className="text-sm text-muted-foreground">Creating intuitive and engaging user interfaces.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="gradient-border p-6 card-hover">
-                            <div className="flex items-start gap-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Briefcase className="h-6 w-6" />
-                                </div>
-                                <div className="text-left">
-                                    <h4 className="font-bold text-lg">Project Management</h4>
-                                    <p className="text-sm text-muted-foreground">Overseeing projects to ensure timely and successful delivery.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
