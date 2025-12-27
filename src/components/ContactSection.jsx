@@ -1,4 +1,5 @@
 import { Instagram, Linkedin, Mail, Map, Phone, Send } from "lucide-react"
+import { success } from "../utils/toast";
 import { useState } from "react"
 export const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -6,7 +7,7 @@ export const ContactSection = () => {
         setIsSubmitting(true);
         e.preventDefault();
         setTimeout(() => {
-            alert("Message sent successfully!");
+            success("Message sent successfully!");
             setIsSubmitting(false);
             e.target.reset();
         }, 1500);
