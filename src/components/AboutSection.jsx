@@ -1,4 +1,4 @@
-import { Briefcase, Code, User } from "lucide-react"
+import { PointerHighlight } from "./ui/pointer-highlight"
 
 export const AboutSection = () => {
     return (
@@ -15,7 +15,7 @@ export const AboutSection = () => {
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold">Passionate web Developer & Project Manager</h3>
                         <p className="text-muted-foreground leading-relaxed text-justify">
-                            I am a first-year student at <span className="text-primary font-bold">IIT Guwahati</span> with a strong passion for <span className="text-primary font-bold">modern web development</span>.
+                            I am a first-year student at <PointerHighlight><span className="text-primary font-bold">_IIT Guwahati_</span></PointerHighlight> with a strong passion for <span className="text-primary font-bold">modern web development</span>.
                         </p>
                         <p className="text-muted-foreground leading-relaxed text-justify">
                             I enjoy building <span className="text-primary font-bold">clean</span>, <span className="text-primary font-bold">fast</span>, and <span className="text-primary font-bold">user-friendly</span> web applications using <span className="text-primary font-bold">modern technologies</span>.
