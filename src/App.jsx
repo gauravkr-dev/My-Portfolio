@@ -15,7 +15,7 @@ function App() {
             duration: 3000,
             style: {
               background: "white",
-              color: "#333",
+              color: "black",
               borderRadius: "12px",
             },
           }}

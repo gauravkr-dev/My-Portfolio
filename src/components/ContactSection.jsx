@@ -1,6 +1,7 @@
 import { Github, Instagram, Linkedin, Mail, Map, Phone, Send } from "lucide-react"
-import { success } from "../utils/toast";
+import { success, error as showError } from "../utils/toast";
 import { useState } from "react"
+import emailjs from "@emailjs/browser";
 export const ContactSection = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [name, setName] = useState("");
@@ -31,13 +32,36 @@ export const ContactSection = () => {
         setErrors({ name: "", email: "", message: "" });
         setIsSubmitting(true);
 
-        setTimeout(() => {
-            success("Message sent successfully!");
+        const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+        const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+        const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+        if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
+            showError("Email service is not configured. Please set environment variables.");
             setIsSubmitting(false);
-            setName("");
-            setEmail("");
-            setMessage("");
-        }, 1500);
+            return;
+        }
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
+            .then(() => {
+                success("Message sent successfully!");
+                e.target.reset();
+                setName("");
+                setEmail("");
+                setMessage("");
+                setIsSubmitting(false);
+            })
+            .catch(() => {
+                showError("Failed to send the message!");
+                setIsSubmitting(false);
+                e.target.reset();
+                setName("");
+                setEmail("");
+                setMessage("");
+                setIsSubmitting(false);
+            });
+
+
     }
     return (
         <section id="contact" className="py-24 px-4 relative bg-secondary/30">
