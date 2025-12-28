@@ -15,7 +15,7 @@ export const AboutSection = () => {
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold">Passionate web Developer & Project Manager</h3>
                         <p className="text-muted-foreground leading-relaxed text-justify">
-                            I am a first-year student at <span className="text-primary font-bold">IIT Guwahati</span> with a strong passion for modern web development.
+                            I am a first-year student at <span className="text-primary font-bold">IIT Guwahati</span> with a strong passion for <span className="text-primary font-bold">modern web development</span>.
                         </p>
                         <p className="text-muted-foreground leading-relaxed text-justify">
                             I enjoy building <span className="text-primary font-bold">clean</span>, <span className="text-primary font-bold">fast</span>, and <span className="text-primary font-bold">user-friendly</span> web applications using <span className="text-primary font-bold">modern technologies</span>.

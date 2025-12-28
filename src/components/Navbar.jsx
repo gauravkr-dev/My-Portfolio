@@ -61,12 +61,12 @@ export const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
                 className="absolute top-4 right-4 p-2 text-foreground bg-transparent z-[10001]"
                 aria-label="Close menu">
-                <X size={24} />
+                <X size={24} className="mt-2 mr-4" />
             </button>
 
-            <div className="flex flex-col justify-center space-y-6 items-center text-xl">
+            <div className="flex flex-col justify-center space-y-8 items-center text-xl">
                 {navItems.map((item, key) => (
-                    <a key={key} href={item.href} className="text-foreground hover:text-primary transition-colors duration-300"
+                    <a key={key} href={item.href} className="text-foreground hover:text-primary transition-colors duration-300  border border-primary/40 rounded-lg bg-secondary/30 px-2 py-1"
                         onClick={() => setIsMenuOpen(false)}
                     >
                         {item.name}
