@@ -2,10 +2,16 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" class="dark"/>
+  <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>portfolio</title>
+  <style>
+    /* Immediate color to avoid light flash before app CSS loads */
+    html { background-color: hsl(210 40% 98%); color: hsl(222 47% 11%); }
+    html.dark { background-color: hsl(222 47% 4%); color: hsl(213 31% 91%); }
+    body { background: transparent; }
+  </style>
   <script>
     (function () {
       try {

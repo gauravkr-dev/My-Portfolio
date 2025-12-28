@@ -3,17 +3,35 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 export const ThemeToggle = ()=>{
-    const [isDarkMode, setIsDarkMode] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(()=>{
+        try {
+            return typeof document !== 'undefined' && document.documentElement.classList.contains('dark');
+        // eslint-disable-next-line no-unused-vars
+        } catch (e) {
+            return false;
+        }
+    });
 
     useEffect(()=>{
-        const storedTheme = localStorage.getItem("theme");
-        if(storedTheme === "dark"){
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setIsDarkMode(true);
-            document.documentElement.classList.add("dark");
-        } else{
-            document.documentElement.classList.remove("dark");
-            setIsDarkMode(false);
+        try {
+            const storedTheme = localStorage.getItem("theme");
+            if (storedTheme) {
+                if(storedTheme === "dark"){
+                    // eslint-disable-next-line react-hooks/set-state-in-effect
+                    setIsDarkMode(true);
+                    document.documentElement.classList.add("dark");
+                } else {
+                    setIsDarkMode(false);
+                    document.documentElement.classList.remove("dark");
+                }
+            } else {
+                const docDark = document.documentElement.classList.contains('dark');
+                setIsDarkMode(docDark);
+                if (docDark) localStorage.setItem('theme','dark');
+            }
+        // eslint-disable-next-line no-unused-vars
+        } catch (e) {
+            // ignore
         }
     }, []);
     const toggleTheme = ()=>{
