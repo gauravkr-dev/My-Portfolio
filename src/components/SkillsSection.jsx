@@ -29,7 +29,7 @@ const skills =[
 export const SkillsSection =()=>{
     const [activeCategory, setActiveCategory] = useState("All");
     return(
-        <section id="skills" className="py-24 px-4 relative bg-secondary/30">
+        <section id="skills" className="py-24 px-4 relative bg-transparent">
             <div className="container mx-auto max-w-5xl">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My <span className="text-primary"> Skills</span></h2>
 
@@ -37,7 +37,7 @@ export const SkillsSection =()=>{
                     {["All", "Frontend", "Backend", "Tools"].map((category, key)=>(
                         <button 
                             key={key}
-                            className={`px-4 py-2 rounded-full font-medium transition-colors duration-300 ${activeCategory === category ? 'bg-primary text-white' : 'bg-card text-foreground hover:bg-primary hover:text-white'}`}
+                            className={`px-4 py-2 rounded-lg font-medium transition-colors duration-300 ${activeCategory === category ? 'bg-primary/40 text-white' : 'bg-transparent rounded-lg border border-primary/40 text-foreground hover:bg-primary/40 hover:text-white'}`}
                             onClick={() => setActiveCategory(category)}
                         >
                             {category}
@@ -48,7 +48,7 @@ export const SkillsSection =()=>{
                     {skills
                         .filter(skill => activeCategory === "All" || skill.category === activeCategory)
                         .map((skill, key)=>(
-                        <div key={key} className="bg-card p-6 rounded-lg shadow-xs card-hover">
+                        <div key={key} className="bg-card p-6 rounded-lg shadow-xs bg-transparent rounded-lg border border-primary/40 card-hover">
                             <div className="text-left mb-4">
                                 <h3 className="font-semibold text-lg">{skill.name}</h3>
                             </div>   
