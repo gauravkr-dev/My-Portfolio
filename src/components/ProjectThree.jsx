@@ -51,7 +51,7 @@ export function ProjectThree() {
           ))}
         </div>
         <div className="mt-12 flex flex-col gap-6">
-          <a href="https://nextjourney.onrender.com/listings" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+          <a href="https://portfolio-silk-rho-58.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
             Visit Website <ExternalLink className="inline-block ml-2 h-4 w-4" />
           </a>
           <a href="https://github.com/Gaurv82013/Portfolio" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">

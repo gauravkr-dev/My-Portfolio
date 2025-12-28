@@ -37,7 +37,7 @@ export const SkillsSection =()=>{
                     {["All", "Frontend", "Backend", "Tools"].map((category, key)=>(
                         <button 
                             key={key}
-                            className={`px-4 py-2 rounded-lg font-medium transition-colors duration-300 ${activeCategory === category ? 'bg-primary/40 text-white' : 'bg-transparent rounded-lg border border-primary/40 text-foreground hover:bg-primary/40 hover:text-white'}`}
+                            className={`px-4 py-2 rounded-lg font-medium transition-colors duration-300 ${activeCategory === category ? 'bg-primary/80 text-white' : 'bg-transparent rounded-lg border border-primary/40 text-foreground hover:bg-primary/40 hover:text-white'}`}
                             onClick={() => setActiveCategory(category)}
                         >
                             {category}
