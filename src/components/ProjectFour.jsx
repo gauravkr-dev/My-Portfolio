@@ -38,7 +38,7 @@ export function ProjectFour() {
   ];
   const Tags = ["TypeScript", "JavaScript", "NextJs", "ReactJs", "NodeJs", "Tailwind CSS", "ExpressJs", "MongoDB", "HTML/CSS", "SQL", "Git/GitHub", "VS Code", "Docker"];
   return (
-    <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 max-w-7xl rounded-3xl bg-transparent p-2 border border-primary/40 md:shadow-sm shadow-xs overflow-hidden">
+    <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 rounded-3xl bg-transparent p-2 border border-primary/40 overflow-hidden">
       <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
       <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">Open Source Contributions</h3>

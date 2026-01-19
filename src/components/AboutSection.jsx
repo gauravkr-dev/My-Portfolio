@@ -3,14 +3,13 @@ import { PointerHighlight } from "./ui/pointer-highlight"
 export const AboutSection = () => {
     return (
         <section id="about" className="py-24 px-4 relative">
-            <div className=" container mx-auto max-w-5xl">
+            <div className=" container mx-auto w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="grid grid-cols-1 gap-6 justify-items-center">
-                        <img src="/MyPhoto.png" alt="My Photo" className="rounded-full shadow-sm h-[300px] md:h-[400px]" />
-
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                    <div className="grid grid-cols-1 gap-6 justify-items-center mb-6">
+                        <img src="/about-image.svg" alt="My Photo" className="rounded-md shadow-sm h-[400px] md:h-[400px]" />
                     </div>
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold">Full stack web Developer & Project Manager</h3>
@@ -30,7 +29,7 @@ export const AboutSection = () => {
                             I am <span className="text-primary font-bold">curious</span>, <span className="text-primary font-bold">motivated</span>, and always ready to learn <span className="text-primary font-bold">new things</span>.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="contact" className="cosmic-button">Get In Touch</a>
+                            <a href="/#contact" className="cosmic-button">Get In Touch</a>
                         </div>
                     </div>
 

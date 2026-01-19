@@ -64,8 +64,8 @@ export const ContactSection = () => {
 
     }
     return (
-        <section id="contact" className="py-24 px-4 relative bg-secondary/30">
-            <div className="container mx-auto max-w-5xl">
+        <section id="contact" className="relative bg-secondary/30 w-full">
+            <div className="container mx-auto w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Get In <span className="text-primary">Touch</span></h2>
                 <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                     I'm always open to discussing <span className="text-primary font-bold">new projects</span>, <span className="text-primary font-bold">creative ideas</span>, or <span className="text-primary font-bold">opportunities</span> to be part of your visions. Feel free to reach out to me
@@ -122,38 +122,39 @@ export const ContactSection = () => {
                         </div>
                     </div>
 
-
-
-
-
-                    <div className="bg-transparent border border-primary/40 p-8 rounded-lg shadow-xs">
-                        <h3 className="text-2xl font-semibold mb-6">Send Message</h3>
-                        <form className="space-y-6" onSubmit={handleSubmit} noValidate>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-16">
-                                <div>
-                                    <label htmlFor="name" className="block text-sm font-medium">Your Name</label>
-                                    <input type="text" value={name} onChange={(e) => { setName(e.target.value); setErrors(prev => ({ ...prev, name: "" })); }} id="name" name="name" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" required />
-                                    {errors.name && (
-                                        <p className="text-red-500 text-sm">{errors.name}</p>
-                                    )}
+                    <div className="bg-transparent flex flex-col md:flex-row w-full md:gap-8">
+                        <div className="md:flex flex-col object-fit justify-center items-center w-full md:w-1/2">
+                            <img src="/connect-image.svg" alt="connect-image" className="size-[600px]" />
+                        </div>
+                        <div className="flex flex-col justify-center w-full md:w-1/2">
+                            <form className="space-y-6 border border-primary/40 p-8 rounded-lg" onSubmit={handleSubmit} noValidate>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
+                                    <div>
+                                        <label htmlFor="name" className="block text-sm font-medium">Your Name</label>
+                                        <input type="text" value={name} onChange={(e) => { setName(e.target.value); setErrors(prev => ({ ...prev, name: "" })); }} id="name" name="name" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" required />
+                                        {errors.name && (
+                                            <p className="text-red-500 text-sm">{errors.name}</p>
+                                        )}
+                                    </div>
+                                    <div>
+                                        <label htmlFor="email" className="block text-sm font-medium">Your Email</label>
+                                        <input type="email" value={email} onChange={(e) => { setEmail(e.target.value); setErrors(prev => ({ ...prev, email: "" })); }} id="email" name="email" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" required />
+                                        {errors.email && (
+                                            <p className="text-red-500 text-sm">{errors.email}</p>
+                                        )}
+                                    </div>
                                 </div>
                                 <div>
-                                    <label htmlFor="email" className="block text-sm font-medium">Your Email</label>
-                                    <input type="email" value={email} onChange={(e) => { setEmail(e.target.value); setErrors(prev => ({ ...prev, email: "" })); }} id="email" name="email" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary" required />
-                                    {errors.email && (
-                                        <p className="text-red-500 text-sm">{errors.email}</p>
+                                    <label htmlFor="message" className="block text-sm font-medium mb-2 mt-8">Your Message</label>
+                                    <textarea value={message} onChange={(e) => { setMessage(e.target.value); setErrors(prev => ({ ...prev, message: "" })); }} id="message" name="message" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary  resize-none h-32" required />
+                                    {errors.message && (
+                                        <p className="text-red-500 text-sm">{errors.message}</p>
                                     )}
                                 </div>
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium mb-2 mt-8">Your Message</label>
-                                <textarea value={message} onChange={(e) => { setMessage(e.target.value); setErrors(prev => ({ ...prev, message: "" })); }} id="message" name="message" className="w-full mt-1 p-2 border rounded-md border-input bg-background focus:outline-hidden focus:ring-2 focus:ring-primary  resize-none h-32" required />
-                                {errors.message && (
-                                    <p className="text-red-500 text-sm">{errors.message}</p>
-                                )}
-                            </div>
-                            <button disabled={isSubmitting} type="submit" className="flex items-center justify-center bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors w-full gap-4">{isSubmitting ? "Sending..." : "Send Message"}<Send className="text-center" size={16} /></button>
-                        </form>
+                                <button disabled={isSubmitting} type="submit" className="flex items-center justify-center bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors w-full gap-4">{isSubmitting ? "Sending..." : "Send Message"}<Send className="text-center" size={16} /></button>
+                            </form>
+                        </div>
+
                     </div>
 
                 </div>
