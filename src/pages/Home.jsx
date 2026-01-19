@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/set-state-in-effect */
 import { useEffect, useState } from "react"
-import { Navbar } from "../components/Navbar"
+// import { Navbar } from "../components/Navbar"
 import { HeroSection } from "../components/HeroSection"
 import { AboutSection } from "../components/AboutSection"
 import { SkillsSection } from "../components/SkillsSection"
@@ -10,6 +10,7 @@ import { Footer } from "../components/Footer"
 import { WhiteBackground } from "../components/ui/white-background"
 import { BlackBackground } from "../components/ui/black-background"
 import { cn } from "@/lib/utils"
+import { HeroButtonSection } from "../components/hero-button-section"
 // import { useIsMobile } from "../hooks/use-mobile";
 export const Home = () => {
     // const isMobile = useIsMobile();
@@ -49,8 +50,9 @@ export const Home = () => {
             {isDarkMode ? <BlackBackground /> : <WhiteBackground />}
 
             {/* Navbar */}
-            <Navbar />
+            {/* <Navbar /> */}
             {/* Main Content */}
+            <HeroButtonSection />
             <main>
                 <HeroSection />
                 <AboutSection />

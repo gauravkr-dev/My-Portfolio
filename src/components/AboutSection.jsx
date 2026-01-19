@@ -1,4 +1,5 @@
 import { PointerHighlight } from "./ui/pointer-highlight"
+import { ArrowRightIcon } from "lucide-react"
 
 export const AboutSection = () => {
     return (
@@ -9,7 +10,7 @@ export const AboutSection = () => {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                     <div className="grid grid-cols-1 gap-6 justify-items-center mb-6">
-                        <img src="/about-image.svg" alt="My Photo" className="rounded-md shadow-sm h-[400px] md:h-[400px]" />
+                        <img src="/about-image.svg" alt="About Me" className="rounded-md shadow-sm h-[400px] md:h-[400px]" />
                     </div>
                     <div className="space-y-4">
                         <h3 className="text-2xl font-bold">Full stack web Developer & Project Manager</h3>
@@ -29,7 +30,10 @@ export const AboutSection = () => {
                             I am <span className="text-primary font-bold">curious</span>, <span className="text-primary font-bold">motivated</span>, and always ready to learn <span className="text-primary font-bold">new things</span>.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="/#contact" className="cosmic-button">Get In Touch</a>
+                            <a href="/#contact" className="group bg-primary px-4 py-2 rounded-lg text-white">
+                                Get In Touch
+                                <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
+                            </a>
                         </div>
                     </div>
 

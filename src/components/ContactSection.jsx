@@ -70,57 +70,7 @@ export const ContactSection = () => {
                 <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                     I'm always open to discussing <span className="text-primary font-bold">new projects</span>, <span className="text-primary font-bold">creative ideas</span>, or <span className="text-primary font-bold">opportunities</span> to be part of your visions. Feel free to reach out to me
                 </p>
-                <div className="flex justify-center mb-12 gap-6">
-                    <span className="rounded-full border border-primary/40 p-2 hover:bg-primary/10 transition-colors">
-                        <a href="https://www.linkedin.com/in/gaurav474">
-                            <Linkedin className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                        </a>
-                    </span>
-                    <span className="rounded-full border border-primary/40 p-2 hover:bg-primary/10 transition-colors">
-                        <a href="https://github.com/gauravkr-dev">
-                            <Github className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                        </a>
-                    </span>
-                    <span className="rounded-full border border-primary/40 p-2 hover:bg-primary/10 transition-colors">
-                        <a href="https://www.instagram.com/gauravkr_474">
-                            <Instagram className="h-6 w-6 text-muted-foreground hover:text-primary transition-colors" />
-                        </a>
-                    </span>
-                </div>
                 <div className="grid grid-cols-1 gap-12">
-
-                    <div className="space-y-6 flex flex-col md:flex-row md:space-x-12 md:space-y-0 mb-12 md:justify-center md:items-center">
-                        <div className="space-y-6 justify-center items-center">
-                            <div className="flex items-center space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Mail className="h-4 w-4 text-primary" />
-                                </div>
-                                <div>
-                                    <a href="mailto:gauravkumar803109@gmail.com" className="text-muted-foreground hover:text-primary hover:underline transition-colors">gauravkumar803109@gmail.com</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="space-y-6 justify-center items-center">
-                            <div className="flex items-center space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Phone className="h-4 w-4 text-primary" />
-                                </div>
-                                <div>
-                                    <a href="tel:+919771570572" className="text-muted-foreground hover:text-primary hover:underline transition-colors">+91 9771570572</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="space-y-6 justify-center items-center">
-                            <div className="flex items-center space-x-4">
-                                <div className="p-3 rounded-full bg-primary/10">
-                                    <Map className="h-4 w-4 text-primary" />
-                                </div>
-                                <div>
-                                    <a href="https://www.google.com/maps/place/Nalanda,Bihar,India" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary hover:underline transition-colors">Nalanda, Bihar (India)</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <div className="bg-transparent flex flex-col md:flex-row w-full md:gap-8">
                         <div className="md:flex flex-col object-fit justify-center items-center w-full md:w-1/2">
