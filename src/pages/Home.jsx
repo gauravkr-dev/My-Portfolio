@@ -7,29 +7,49 @@ import { ProjectsSection } from "../components/ProjectsSection"
 import { ContactSection } from "../components/ContactSection"
 import { Footer } from "../components/Footer"
 import { BackgroundLines } from "../components/ui/background-lines";
-
+import { useIsMobile } from "../hooks/use-mobile";
 export const Home = () => {
+    const isMobile = useIsMobile();
 
     return (
 
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-            <BackgroundLines>
-                
-                {/* Navbar */}
-                <Navbar />
+            {isMobile ?
+                <>
+                    {/* Navbar */}
+                    <Navbar />
+                    {/* Main Content */}
+                    <main>
+                        <HeroSection />
+                        <AboutSection />
+                        <SkillsSection />
+                        <ProjectsSection />
+                        <ContactSection />
+                    </main>
 
-                {/* Main Content */}
-                <main>
-                    <HeroSection />
-                    <AboutSection />
-                    <SkillsSection />
-                    <ProjectsSection />
-                    <ContactSection />
-                </main>
+                    {/* Footer */}
+                    <Footer />
+                </>
+                :
 
-                {/* Footer */}
-                <Footer />
-            </BackgroundLines>
+                <BackgroundLines>
+
+                    {/* Navbar */}
+                    <Navbar />
+
+                    {/* Main Content */}
+                    <main>
+                        <HeroSection />
+                        <AboutSection />
+                        <SkillsSection />
+                        <ProjectsSection />
+                        <ContactSection />
+                    </main>
+
+                    {/* Footer */}
+                    <Footer />
+                </BackgroundLines>
+            }
         </div>
 
 

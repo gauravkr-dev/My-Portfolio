@@ -36,12 +36,12 @@ export function ProjectFive() {
     "https://assets.aceternity.com/wobble-card.png",
     "https://assets.aceternity.com/world-map.webp",
   ];
-  const Tags=["TypeScript", "Aceternity UI", "NextJs", "Tailwind CSS", "Lucide React", "Vercel", "HTML", "CSS", ];
+  const Tags = ["TypeScript", "Aceternity UI", "NextJs", "Tailwind CSS", "Lucide React", "Vercel", "HTML", "CSS",];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 max-w-7xl rounded-3xl bg-transparent p-2 border border-primary/40 md:shadow-sm shadow-xs overflow-hidden">
       <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
       <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
-        <h3 className="text-3xl text-primary text-center font-bold mb-4 mt-2 font-serif">MusicMaster</h3>
+        <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">MusicMaster</h3>
         <p className="text-justify text-muted-foreground text-sm ">MusicMaster is an online learning platform that makes learning music <span className="text-primary font-bold">enjoyable</span> and <span className="text-primary font-bold">educational</span>. It offers high-quality <span className="text-primary font-bold">courses</span>, <span className="text-primary font-bold">expert-led lessons</span>, and <span className="text-primary font-bold">featured webinars</span> to help learners at every level improve their musical skills with the right guidance and resources.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">
           {Tags.map((tag, index) => (

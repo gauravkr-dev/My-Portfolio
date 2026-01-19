@@ -13,7 +13,7 @@ export const AboutSection = () => {
 
                     </div>
                     <div className="space-y-4">
-                        <h3 className="text-2xl font-bold">Passionate web Developer & Project Manager</h3>
+                        <h3 className="text-2xl font-bold">Full stack web Developer & Project Manager</h3>
                         <p className="text-muted-foreground leading-relaxed text-justify">
                             I am a first-year student at <PointerHighlight><span className="text-primary font-bold">_IIT Guwahati_</span></PointerHighlight> with a strong passion for <span className="text-primary font-bold">modern web development</span>.
                         </p>

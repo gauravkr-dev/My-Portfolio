@@ -36,12 +36,12 @@ export function ProjectFour() {
     "https://assets.aceternity.com/wobble-card.png",
     "https://assets.aceternity.com/world-map.webp",
   ];
-  const Tags=["TypeScript", "JavaScript", "NextJs", "ReactJs", "NodeJs", "Tailwind CSS", "ExpressJs", "MongoDB", "HTML/CSS", "SQL", "Git/GitHub", "VS Code", "Docker"];
+  const Tags = ["TypeScript", "JavaScript", "NextJs", "ReactJs", "NodeJs", "Tailwind CSS", "ExpressJs", "MongoDB", "HTML/CSS", "SQL", "Git/GitHub", "VS Code", "Docker"];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 max-w-7xl rounded-3xl bg-transparent p-2 border border-primary/40 md:shadow-sm shadow-xs overflow-hidden">
       <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
       <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
-        <h3 className="text-3xl text-primary text-center font-bold mb-4 mt-2 font-serif">Open Source Contributions</h3>
+        <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">Open Source Contributions</h3>
         <p className="text-justify text-muted-foreground text-sm ">As a open source contributor, I actively engage in collaborative projects, enhancing software quality and functionality through <span className="text-primary font-bold">code contributions</span>, <span className="text-primary font-bold">bug fixes</span>, and <span className="text-primary font-bold">feature implementations</span>.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">
           {Tags.map((tag, index) => (
@@ -52,7 +52,7 @@ export function ProjectFour() {
         </div>
         <div className="mt-12 flex flex-col gap-6">
           <a href="https://www.linkedin.com/in/gaurav474" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
-           LinkedIn <Linkedin className="inline-block ml-2 h-4 w-4" />
+            LinkedIn <Linkedin className="inline-block ml-2 h-4 w-4" />
           </a>
           <a href="https://github.com/gauravkr-dev/Portfolio" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
             GitHub <Github className="inline-block ml-2 h-4 w-4" />

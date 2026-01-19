@@ -36,12 +36,12 @@ export function ProjectTwo() {
     "https://assets.aceternity.com/wobble-card.png",
     "https://assets.aceternity.com/world-map.webp",
   ];
-  const Tags=["JavaScript", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Font Awesome", "Bootstrap", " Cloudinary", "Google Maps"];
+  const Tags = ["JavaScript", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Font Awesome", "Bootstrap", " Cloudinary", "Google Maps"];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 max-w-7xl rounded-3xl bg-transparent p-2 border border-primary/40 md:shadow-sm shadow-xs overflow-hidden">
       <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
       <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
-        <h3 className="text-3xl text-primary text-center font-bold mb-4 mt-2 font-serif">NextJourney</h3>
+        <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">NextJourney</h3>
         <p className="text-justify text-muted-foreground text-sm ">NextJourney is a <span className="font-bold text-primary">full-stack</span> travel web application that helps users <span className="font-bold text-primary">explore</span> and <span className="font-bold text-primary">manage</span> travel listings. Users can <span className="font-bold text-primary">add</span>, <span className="font-bold text-primary">update</span>, or <span className="font-bold text-primary">delete</span> their own listings, browse destinations for their next journey, view locations directly on <span className="font-bold text-primary">Google Maps</span>, and share their experiences through <span className="font-bold text-primary">reviews</span>.</p>
         <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary">Smooth</span>, <span className="font-bold text-primary">Secure</span>, and <span className="font-bold text-primary">Scalable</span> for Choosing Destinations.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">

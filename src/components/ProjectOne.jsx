@@ -36,12 +36,12 @@ export function ProjectOne() {
     "https://assets.aceternity.com/wobble-card.png",
     "https://assets.aceternity.com/world-map.webp",
   ];
-  const Tags=["TypeScript", "NextJs", "Tailwind CSS", "Shadcn UI", "Prisma", "PostgreSQL", "Cloudflare Workers", "Vercel", "Kinde", "ORPC"];
+  const Tags = ["TypeScript", "NextJs", "Tailwind CSS", "Shadcn UI", "Prisma", "PostgreSQL", "Cloudflare Workers", "Vercel", "Kinde", "ORPC"];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 max-w-7xl rounded-3xl bg-transparent p-2 border border-primary/40 md:shadow-sm shadow-xs overflow-hidden">
       <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
       <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
-        <h3 className="text-3xl text-primary text-center font-bold mb-4 mt-2 font-serif">NexFlow</h3>
+        <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">NexFlow</h3>
         <p className="text-justify text-muted-foreground text-sm ">The <span className="font-bold text-primary">AI-ready</span> home for team communication. NexFlow organizes conversations into <span className="font-bold text-primary">channels</span> with <span className="font-bold text-primary">threads</span>, Realtime, and AI so teams stay in sync.</p>
         <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary">Fast</span>, <span className="font-bold text-primary">Secure</span>, and <span className="font-bold text-primary">Scalable</span> realtime collaboration for teams.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">
