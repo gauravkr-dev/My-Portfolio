@@ -38,9 +38,9 @@ export function ProjectTwo() {
   ];
   const Tags = ["JavaScript", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Font Awesome", "Bootstrap", " Cloudinary", "Google Maps"];
   return (
-    <div className="flex flex-col md:flex-row max-h-screen w-full gap-4 my-10 rounded-3xl bg-transparent p-2 border border-primary/40 shadow-xs overflow-hidden">
-      <ThreeDMarquee images={images} className="w-full md:w-3/5 md:h-[500px] object-cover" />
-      <div className="w-full md:w-2/5 flex flex-col justify-start items-center px-6">
+    <div className="flex flex-col md:flex-row max-h-screen w-full gap-18 my-10 bg-transparent p-2 overflow-hidden">
+      <ThreeDMarquee images={images} className="w-full md:w-2/3 h-[500px] object-cover" />
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">NextJourney</h3>
         <p className="text-justify text-muted-foreground text-sm ">NextJourney is a <span className="font-bold text-primary">full-stack</span> travel web application that helps users <span className="font-bold text-primary">explore</span> and <span className="font-bold text-primary">manage</span> travel listings. Users can <span className="font-bold text-primary">add</span>, <span className="font-bold text-primary">update</span>, or <span className="font-bold text-primary">delete</span> their own listings, browse destinations for their next journey, view locations directly on <span className="font-bold text-primary">Google Maps</span>, and share their experiences through <span className="font-bold text-primary">reviews</span>.</p>
         <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary">Smooth</span>, <span className="font-bold text-primary">Secure</span>, and <span className="font-bold text-primary">Scalable</span> for Choosing Destinations.</p>
