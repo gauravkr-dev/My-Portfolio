@@ -56,7 +56,7 @@ export const SkillsSection = () => {
                         .filter(skill => activeCategory === "All" || skill.category === activeCategory)
                         .map((skill, key) => (
                             <div key={key} className="p-2">
-                                <div className="relative bg-transparent w-40 h-30 rounded-2xl flex items-center justify-center border border-primary/50 hover:bg-primary/10 transition-colors mx-auto duration-300">
+                                <div className="relative group bg-transparent w-40 h-30 rounded-2xl flex items-center justify-center border border-primary/50 hover:bg-primary/10 transition-colors mx-auto duration-300">
 
                                     {/* Badge */}
                                     <span className="absolute top-1 right-3 text-[10px] px-1.5 py-1 rounded-sm tracking-wide bg-primary/10 text-primary/30 border border-primary/30">
@@ -68,7 +68,7 @@ export const SkillsSection = () => {
                                         <img
                                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`}
                                             alt={skill.name}
-                                            className="w-8 h-8 hover:scale-110 transition-transform duration-300"
+                                            className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
                                         />
                                         <p className="text-sm font-medium">{skill.name}</p>
                                     </div>

@@ -11,9 +11,8 @@ import { WhiteBackground } from "../components/ui/white-background"
 import { BlackBackground } from "../components/ui/black-background"
 import { cn } from "@/lib/utils"
 import { HeroButtonSection } from "../components/hero-button-section"
-// import { useIsMobile } from "../hooks/use-mobile";
+
 export const Home = () => {
-    // const isMobile = useIsMobile();
     const [isDarkMode, setIsDarkMode] = useState(false);
 
     useEffect(() => {

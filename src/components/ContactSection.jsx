@@ -76,7 +76,7 @@ export const ContactSection = () => {
                         <div className="md:flex flex-col object-fit justify-center items-center w-full md:w-1/2">
                             <img src="/connect-image.svg" alt="connect-image" className="size-[600px]" />
                         </div>
-                        <div className="flex flex-col justify-center w-full md:w-1/2">
+                        <div className="flex flex-col justify-center w-full md:w-1/2 mx-auto">
                             <form className="space-y-6 border border-primary/40 p-8 rounded-lg" onSubmit={handleSubmit} noValidate>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
                                     <div>

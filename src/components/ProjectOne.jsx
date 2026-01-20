@@ -1,8 +1,10 @@
 "use client";
 import { ThreeDMarquee } from "@/components/ui/3d-marquee";
 import { ExternalLink, Github } from "lucide-react";
-
+import { useIsMobile } from "../hooks/use-mobile";
+import { cn } from "../lib/utils";
 export function ProjectOne() {
+  const isMobile = useIsMobile();
   const images = [
     "https://assets.aceternity.com/cloudinary_bkp/3d-card.png",
     "https://assets.aceternity.com/animated-modal.png",
@@ -39,8 +41,11 @@ export function ProjectOne() {
   const Tags = ["TypeScript", "NextJs", "Tailwind CSS", "Shadcn UI", "Prisma", "PostgreSQL", "Cloudflare Workers", "Vercel", "Kinde", "ORPC"];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-18 my-10 bg-transparent p-2 overflow-hidden">
-      <ThreeDMarquee images={images} className="w-full md:w-2/3 h-[500px] object-cover" />
-      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6">
+      <div className="border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden">
+        <ThreeDMarquee images={images} className={cn(`${isMobile ? "h-[300px]" : "h-[500px]"}`)} />
+      </div>
+
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">NexFlow</h3>
         <p className="text-justify text-muted-foreground text-sm ">The <span className="font-bold text-primary">AI-ready</span> home for team communication. NexFlow organizes conversations into <span className="font-bold text-primary">channels</span> with <span className="font-bold text-primary">threads</span>, Realtime, and AI so teams stay in sync.</p>
         <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary">Fast</span>, <span className="font-bold text-primary">Secure</span>, and <span className="font-bold text-primary">Scalable</span> realtime collaboration for teams.</p>

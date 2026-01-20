@@ -20,10 +20,19 @@ export const HeroSection = () => {
                         </p>
 
                         <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-row gap-8">
-                            <button className="group bg-primary text-white px-5 py-2.5 rounded-lg">
+                            {/* <button className="group bg-primary text-white px-5 py-2.5 rounded-lg">
                                 Resume
                                 <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
-                            </button>
+                            </button> */}
+                            <a
+                                href="/gaurav_resume.pdf"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="group flex items-center bg-primary text-white px-5 py-2.5 rounded-lg"
+                            >
+                                View Resume
+                                <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
+                            </a>
                             <a href="#projects" className="group rounded-lg gap-2 border border-primary px-5 py-2.5">My Work <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" /></a>
                         </div>
                     </div>

@@ -39,8 +39,10 @@ export function ProjectThree() {
   const Tags = ["JavaScript", "TypeScript", "EmailJs", "Aceternity UI", "ReactJs", "Tailwind CSS", "Lucide React", "Vercel", "HTML"];
   return (
     <div className="flex flex-col md:flex-row max-h-screen w-full gap-18 my-10 bg-transparent p-2 overflow-hidden">
-      <ThreeDMarquee images={images} className="w-full md:w-2/3 h-[500px] object-cover" />
-      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6">
+      <div className="border border-primary w-full md:w-2/3 h-[500px] object-cover rounded-lg overflow-hidden">
+        <ThreeDMarquee images={images} className="" />
+      </div>
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">My Portfolio</h3>
         <p className="text-justify text-muted-foreground text-sm ">This portfolio showcases my <span className="font-bold text-primary">skills</span>, <span className="font-bold text-primary">projects</span>, and <span className="font-bold text-primary">technical expertise</span>, reflecting my journey as a <span className="font-bold text-primary">developer</span> and my continuous growth in <span className="font-bold text-primary">modern web technologies</span>. It highlights my passion for building <span className="font-bold text-primary">innovative</span>, <span className="font-bold text-primary">user-focused</span> solutions and my commitment to writing <span className="font-bold text-primary">clean</span>, <span className="font-bold text-primary">scalable</span>, and <span className="font-bold text-primary">efficient</span> code while solving real-world problems.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">
