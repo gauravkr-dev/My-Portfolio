@@ -55,11 +55,11 @@ export function ProjectFour() {
             </span>
           ))}
         </div>
-        <div className="mt-12 flex flex-col gap-6">
-          <a href="https://www.linkedin.com/in/gaurav474" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+        <div className="mt-12 flex flex-col gap-4">
+          <a href="https://www.linkedin.com/in/gaurav474" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-1">
             LinkedIn <Linkedin className="inline-block ml-2 h-4 w-4" />
           </a>
-          <a href="https://github.com/gauravkr-dev/Portfolio" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+          <a href="https://github.com/gauravkr-dev/Portfolio" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-2">
             GitHub <Github className="inline-block ml-2 h-4 w-4" />
           </a>
         </div>

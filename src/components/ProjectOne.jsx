@@ -56,11 +56,11 @@ export function ProjectOne() {
             </span>
           ))}
         </div>
-        <div className="mt-12 flex flex-col gap-6">
-          <a href="https://nex-flow-five.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+        <div className="mt-12 flex flex-col gap-4">
+          <a href="https://nex-flow-five.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-1">
             Visit Website <ExternalLink className="inline-block ml-2 h-4 w-4" />
           </a>
-          <a href="https://github.com/gauravkr-dev/NexFlow" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors">
+          <a href="https://github.com/gauravkr-dev/NexFlow" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-2">
             GitHub Repo <Github className="inline-block ml-2 h-4 w-4" />
           </a>
         </div>
