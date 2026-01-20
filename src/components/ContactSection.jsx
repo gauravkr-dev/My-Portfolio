@@ -65,7 +65,7 @@ export const ContactSection = () => {
     }
     return (
         <section id="contact" className="relative bg-secondary/30 w-full">
-            <div className="container mx-auto w-full">
+            <div className="container mx-2 w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Get In <span className="text-primary">Touch</span></h2>
                 <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                     I'm always open to discussing <span className="text-primary font-bold">new projects</span>, <span className="text-primary font-bold">creative ideas</span>, or <span className="text-primary font-bold">opportunities</span> to be part of your visions. Feel free to reach out to me
