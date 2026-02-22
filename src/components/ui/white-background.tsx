@@ -1,3 +1,5 @@
+import React from "react"
+
 export const WhiteBackground = () => {
     return (
         <svg className="fixed z-0 -mt-20 right-0" width="890" height="764" viewBox="0 0 890 764" fill="none" xmlns="http://www.w3.org/2000/svg">

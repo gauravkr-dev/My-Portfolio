@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "../../lib/utils";
 import { motion } from "motion/react";
+import React from "react";
 import { useRef, useEffect, useState } from "react";
 
 export function PointerHighlight({

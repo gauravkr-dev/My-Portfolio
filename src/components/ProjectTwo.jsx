@@ -42,7 +42,7 @@ export function ProjectTwo() {
   ];
   const Tags = ["JavaScript", "NodeJs", "ExpressJs", "MongoDB", "HTML", "CSS", "Font Awesome", "Bootstrap", " Cloudinary", "Google Maps"];
   return (
-    <div className="flex flex-col md:flex-row w-full gap-18 my-10 bg-transparent p-2 overflow-hidden">
+    <div className="flex flex-col md:flex-row w-full gap-18 my-10 bg-transparent py-2 overflow-hidden">
       <div className={cn(`${isMobile ? "h-[400px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
         <ThreeDMarquee images={images} />
       </div>

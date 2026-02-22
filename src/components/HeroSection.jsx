@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRightIcon } from "lucide-react"
 import { OpenToWork } from "./open-to-work"
 export const HeroSection = () => {
     return (
-        <section id='hero' className="relative min-h-screen flex flex-col items-center justify-center px-4">
+        <section id='hero' className="relative min-h-screen flex flex-col items-center justify-center">
             <OpenToWork />
             <div className="grid grid-cols-1 gap-4 items-center w-full mx-auto">
                 <div className="grid grid-cols-1 gap-4 justify-items-center mb-6">
@@ -31,9 +31,9 @@ export const HeroSection = () => {
                                 className="group flex items-center bg-primary text-white px-5 py-2.5 rounded-lg"
                             >
                                 View Resume
-                                <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
+                                <ArrowRightIcon className="group-hover:translate-x-1 transition-transform ml-1 size-5 inline-flex" />
                             </a>
-                            <a href="#projects" className="group rounded-lg gap-2 border border-primary px-5 py-2.5">My Work <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" /></a>
+                            <a href="#projects" className="group rounded-lg gap-2 border border-primary px-5 py-2.5">My Work <ArrowRightIcon className="group-hover:translate-x-1 transition-transform ml-1 size-5 inline-flex" /></a>
                         </div>
                     </div>
                 </div>

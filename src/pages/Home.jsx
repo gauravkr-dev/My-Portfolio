@@ -45,12 +45,8 @@ export const Home = () => {
 
     return (
 
-        <div className={cn("min-h-screen text-foreground overflow-x-hidden", !isDarkMode && "bg-white")}>
+        <div className={cn("min-h-screen text-foreground overflow-x-hidden md:px-8 px-1", !isDarkMode && "bg-white")}>
             {isDarkMode ? <BlackBackground /> : <WhiteBackground />}
-
-            {/* Navbar */}
-            {/* <Navbar /> */}
-            {/* Main Content */}
             <HeroButtonSection />
             <main>
                 <HeroSection />

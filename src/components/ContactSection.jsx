@@ -64,7 +64,7 @@ export const ContactSection = () => {
 
     }
     return (
-        <section id="contact" className="relative bg-secondary/30 w-full px-2">
+        <section id="contact" className="relative bg-secondary/30 w-full">
             <div className="container items-center w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Get In <span className="text-primary">Touch</span></h2>
                 <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -101,7 +101,7 @@ export const ContactSection = () => {
                                         <p className="text-red-500 text-sm">{errors.message}</p>
                                     )}
                                 </div>
-                                <button disabled={isSubmitting} type="submit" className="flex items-center justify-center bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors w-full gap-4">{isSubmitting ? "Sending..." : "Send Message"}<Send className="text-center" size={16} /></button>
+                                <button disabled={isSubmitting} type="submit" className="cursor-pointer flex items-center justify-center bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors w-full gap-4">{isSubmitting ? "Sending..." : "Send Message"}<Send className="text-center" size={16} /></button>
                             </form>
                         </div>
 

@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { cn } from "../../lib/utils";
+import React from "react";
 export const ThreeDMarquee = ({
   images,
   className,
