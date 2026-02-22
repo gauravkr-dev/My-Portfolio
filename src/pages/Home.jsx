@@ -10,7 +10,7 @@ import { Footer } from "../components/Footer"
 import { WhiteBackground } from "../components/ui/white-background"
 import { BlackBackground } from "../components/ui/black-background"
 import { cn } from "@/lib/utils"
-import { HeroButtonSection } from "../components/hero-button-section"
+import { HeroButtonSection } from "../components/navbar-section"
 
 export const Home = () => {
     const [isDarkMode, setIsDarkMode] = useState(false);
