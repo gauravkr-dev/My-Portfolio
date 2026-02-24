@@ -3,7 +3,7 @@ import { ProjectOne } from "./ProjectOne";
 import { ProjectTwo } from "./ProjectTwo";
 import { ProjectThree } from "./ProjectThree";
 import { ProjectFour } from "./ProjectFour";
-import { ProjectFive } from "./ProjectFive";
+import { ProjectZero } from "./ProjectZero";
 
 export const ProjectsSection = () => {
 
@@ -16,11 +16,11 @@ export const ProjectsSection = () => {
 
                 {/* First Project: */}
                 <div className="flex flex-col gap-12">
+                    <ProjectZero />
                     <ProjectOne />
                     <ProjectTwo />
                     <ProjectThree />
                     <ProjectFour />
-                    <ProjectFive />
                 </div>
 
             </div>
