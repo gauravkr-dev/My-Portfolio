@@ -24,7 +24,6 @@ const skills = [
     { name: "Firebase", slug: "firebase", category: "Backend" },
     { name: "Supabase", slug: "supabase", category: "Backend" },
 
-
     //Tools
     { name: "GitHub", slug: "github", category: "Tools" },
     { name: "Docker", slug: "docker", category: "Tools" },

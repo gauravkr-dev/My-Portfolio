@@ -6,7 +6,12 @@ export const HeroSection = () => {
             <OpenToWork />
             <div className="grid grid-cols-1 gap-4 items-center w-full mx-auto">
                 <div className="grid grid-cols-1 gap-4 justify-items-center mb-6">
-                    <img src="/MyPhoto.png" alt="About Me" className="rounded-full h-[180px]" />
+                    <div className="relative w-[200px] h-[200px]">
+                        <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-[4px] overflow-hidden">
+                            <img src="/MyPhoto.png" alt="About Me" className="w-full h-full rounded-full object-cover block" />
+                        </div>
+                    </div>
+
                 </div>
                 <div className="container max-w-4xl mx-auto text-center z-10">
                     <div className="space-y-4 flex flex-col items-center">
