@@ -9,7 +9,11 @@ export const HeroSection = () => {
                     <div className="relative w-[200px] h-[200px]">
                         <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 p-[4px] overflow-hidden">
                             <img src="/MyPhoto.png" alt="About Me" className="w-full h-full rounded-full object-cover block" />
+
                         </div>
+                        <p className="absolute bottom-1 left-1/2 transform -translate-x-1/2 translate-y-1/2 border border bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
+                            Developer
+                        </p>
                     </div>
 
                 </div>
