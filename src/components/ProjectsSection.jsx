@@ -4,6 +4,7 @@ import { ProjectTwo } from "./ProjectTwo";
 import { ProjectThree } from "./ProjectThree";
 import { ProjectFour } from "./ProjectFour";
 import { ProjectZero } from "./ProjectZero";
+import { ProjectZeroOne } from "./ProjectZeroOne";
 
 export const ProjectsSection = () => {
 
@@ -16,6 +17,7 @@ export const ProjectsSection = () => {
 
                 {/* First Project: */}
                 <div className="flex flex-col gap-12">
+                    <ProjectZeroOne />
                     <ProjectZero />
                     <ProjectOne />
                     <ProjectTwo />
