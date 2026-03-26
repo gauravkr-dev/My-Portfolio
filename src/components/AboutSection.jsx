@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "lucide-react"
 export const AboutSection = () => {
     return (
         <section id="about" className="py-24 relative">
-            <div className=" container mx-auto w-full">
+            <div className="w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
                     About <span className="text-primary">Me</span>
                 </h2>

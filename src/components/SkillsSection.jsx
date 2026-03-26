@@ -36,7 +36,7 @@ export const SkillsSection = () => {
     const [activeCategory, setActiveCategory] = useState("All");
     return (
         <section id="skills" className="py-24 relative bg-transparent">
-            <div className="container mx-auto w-full">
+            <div className="w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">My <span className="text-primary"> Skills</span></h2>
 
                 <div className="flex flex-row items-center overflow-x-auto justify-start sm:justify-center gap-4 mb-12 no-scrollbar">
@@ -50,26 +50,21 @@ export const SkillsSection = () => {
                         </button>
                     ))}
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 justify-items-center">
+                <div className="flex flex-wrap justify-center items-center md:gap-4 gap-2">
                     {skills
                         .filter(skill => activeCategory === "All" || skill.category === activeCategory)
                         .map((skill, key) => (
-                            <div key={key} className="p-2">
-                                <div className="relative group bg-transparent w-40 h-30 rounded-2xl flex items-center justify-center border border-primary/50 hover:bg-primary/10 transition-colors mx-auto duration-300">
-
-                                    {/* Badge */}
-                                    <span className="absolute top-1 right-3 text-[10px] px-1.5 py-1 rounded-sm tracking-wide bg-primary/10 text-primary/30 border border-primary/30">
-                                        {skill.category.toUpperCase()}
-                                    </span>
+                            <div key={key} className="md:p-2 p-1">
+                                <div className="relative bg-transparent rounded-md flex items-center justify-center border border-primary/50 hover:bg-primary/10 transition-colors md:px-4 px-2 py-2 duration-300">
 
                                     {/* Content */}
-                                    <div className="flex flex-col items-center gap-2 mt-2">
+                                    <div className="flex flex-row items-center gap-2">
                                         <img
                                             src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${skill.slug}/${skill.slug}-original.svg`}
                                             alt={skill.name}
-                                            className="w-8 h-8 group-hover:scale-110 transition-transform duration-300"
+                                            className="md:w-6 md:h-6 w-4 h-4 rounded"
                                         />
-                                        <p className="text-sm font-medium">{skill.name}</p>
+                                        <p className="md:text-sm text-xs font-medium">{skill.name}</p>
                                     </div>
                                 </div>
 

@@ -4,7 +4,7 @@ export const OpenToWork = () => {
         <div className="absolute left-0 right-0 top-4 flex items-center justify-center z-50 pointer-events-auto">
             <a
                 href="#contact"
-                className="bg-primary/10 dark:hover:border-t-border group mx-auto flex w-fit items-center gap-4 rounded-full border p-1 pl-4 shadow-sm shadow-zinc-950/5 transition-colors duration-300 dark:border-t-white/5 dark:shadow-zinc-950">
+                className="bg-primary/10 group mx-auto flex w-fit items-center gap-4 rounded-full p-1 pl-4 border border-primary/20 transition-colors duration-300 shadow-sm">
                 {/* <span className="text-foreground text-sm">Open to work with you</span> */}
                 <div class="relative flex items-center justify-center gap-4">
                     <span class="relative flex h-3 w-3">

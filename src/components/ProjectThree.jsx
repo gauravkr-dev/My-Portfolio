@@ -42,7 +42,7 @@ export function ProjectThree() {
   const Tags = ["JavaScript", "TypeScript", "EmailJs", "Aceternity UI", "ReactJs", "Tailwind CSS", "Lucide React", "Vercel", "HTML"];
   return (
     <div className="flex flex-col md:flex-row w-full gap-18 my-10 bg-transparent py-2 overflow-hidden">
-      <div className={cn(`${isMobile ? "h-[400px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
+      <div className={cn(`${isMobile ? "h-[300px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
         <ThreeDMarquee images={images} />
       </div>
       <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">

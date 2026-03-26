@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowRightIcon } from "lucide-react"
+import { ArrowRightIcon } from "lucide-react"
 import { OpenToWork } from "./open-to-work"
 export const HeroSection = () => {
     return (
@@ -17,7 +17,7 @@ export const HeroSection = () => {
                     </div>
 
                 </div>
-                <div className="container max-w-4xl mx-auto text-center z-10">
+                <div className="max-w-4xl mx-auto text-center z-10">
                     <div className="space-y-4 flex flex-col items-center">
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                             <span className="opacity-0 animate-fade-in">Hi, I'm</span>
@@ -29,20 +29,20 @@ export const HeroSection = () => {
                         </p>
 
                         <div className="pt-4 opacity-0 animate-fade-in-delay-4 flex flex-row gap-8">
-                            {/* <button className="group bg-primary text-white px-5 py-2.5 rounded-lg">
-                                Resume
-                                <ArrowRightIcon className="group-hover:translate-x-0.5 transition ml-1 size-5 inline-flex" />
-                            </button> */}
                             <a
                                 href="/gaurav_resume.pdf"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="group flex items-center bg-primary text-white px-5 py-2.5 rounded-lg"
                             >
-                                View Resume
-                                <ArrowRightIcon className="group-hover:translate-x-1 transition-transform ml-1 size-5 inline-flex" />
+                                <button className="flex items-center bg-primary hover:bg-primary/95 border border-primary text-white px-5 py-1.5 cursor-pointer rounded-lg transition-colors duration-300">
+                                    View Resume
+                                </button>
                             </a>
-                            <a href="#projects" className="group rounded-lg gap-2 border border-primary px-5 py-2.5">My Work <ArrowRightIcon className="group-hover:translate-x-1 transition-transform ml-1 size-5 inline-flex" /></a>
+                            <a href="#projects">
+                                <button className="flex items-center border border-primary text-primary px-5 py-1.5 cursor-pointer rounded-lg bg-primary/10 hover:bg-primary/15 transition-colors duration-300">
+                                    View Projects
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>

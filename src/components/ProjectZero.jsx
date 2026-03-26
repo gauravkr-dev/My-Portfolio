@@ -41,7 +41,7 @@ export function ProjectZero() {
     const Tags = ["TypeScript", "NextJs", "Tailwind CSS", "Shadcn UI", "Drizzle ORM", "Neon", "imagekit.io", "Vercel", "Better Auth", "tRPC", "Inngest", "Polar", "Sarvam AI", "Gemini AI"];
     return (
         <div className="flex flex-col md:flex-row w-full gap-18 my-10 bg-transparent py-2 overflow-hidden">
-            <div className={cn(`${isMobile ? "h-[400px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
+            <div className={cn(`${isMobile ? "h-[300px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
                 <ThreeDMarquee images={images} />
             </div>
 

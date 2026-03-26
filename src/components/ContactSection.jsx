@@ -65,9 +65,9 @@ export const ContactSection = () => {
     }
     return (
         <section id="contact" className="relative bg-secondary/30 w-full">
-            <div className="container items-center w-full">
+            <div className="items-center w-full">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Get In <span className="text-primary">Touch</span></h2>
-                <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
+                <p className="text-center text-muted-foreground max-w-2xl mx-auto mb-8">
                     I'm always open to discussing <span className="text-primary font-bold">new projects</span>, <span className="text-primary font-bold">creative ideas</span>, or <span className="text-primary font-bold">opportunities</span> to be part of your visions. Feel free to reach out to me
                 </p>
                 <div className="grid grid-cols-1 gap-12">
@@ -77,7 +77,7 @@ export const ContactSection = () => {
                             <img src="/connect-image.svg" alt="connect-image" className="size-[600px]" />
                         </div>
                         <div className="flex flex-col justify-center w-full md:w-1/2 mx-auto">
-                            <form className="space-y-6 border border-primary/40 p-8 rounded-lg" onSubmit={handleSubmit} noValidate>
+                            <form className="space-y-6 border border-primary/40 md:p-8 py-8 px-4 rounded-lg" onSubmit={handleSubmit} noValidate>
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-8">
                                     <div>
                                         <label htmlFor="name" className="block text-sm font-medium">Your Name</label>
