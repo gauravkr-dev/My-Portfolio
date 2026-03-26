@@ -29,8 +29,8 @@ export const AboutSection = () => {
                         <p className="text-muted-foreground leading-relaxed text-justify">
                             I am <span className="text-primary font-bold">curious</span>, <span className="text-primary font-bold">motivated</span>, and always ready to learn <span className="text-primary font-bold">new things</span>.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-                            <a href="/#contact" className="group bg-primary px-4 py-2 rounded-lg text-white">
+                        <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center items-center">
+                            <a href="/#contact" className="group bg-primary px-4 py-2 rounded-lg text-white max-w-max">
                                 Get In Touch
                                 <ArrowRightIcon className="group-hover:translate-x-1 transition-transform ml-1 size-5 inline-flex" />
                             </a>

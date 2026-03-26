@@ -45,7 +45,7 @@ export function ProjectZeroOne() {
                 <ThreeDMarquee images={images} />
             </div>
 
-            <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
+            <div className="w-full md:w-1/3 flex flex-col justify-start items-center md:px-6 px-3 border border-primary rounded-lg">
                 <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">
                     GroundUp Pulse
                 </h3>

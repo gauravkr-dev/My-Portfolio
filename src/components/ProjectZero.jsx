@@ -45,7 +45,7 @@ export function ProjectZero() {
                 <ThreeDMarquee images={images} />
             </div>
 
-            <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
+            <div className="w-full md:w-1/3 flex flex-col justify-start items-center md:px-6 px-3 border border-primary rounded-lg">
                 <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">BeBetter.ai</h3>
                 <p className="text-justify text-muted-foreground text-sm ">BeBetter.ai is your <span className="text-primary font-bold">all-in-one AI career companion</span> that helps you <span className="text-primary font-bold">practice interviews</span>, <span className="text-primary font-bold">test your knowledge</span>, <span className="text-primary font-bold">optimize your resume</span>, <span className="text-primary font-bold">explore job opportunities</span>, and grow with <span className="text-primary font-bold">intelligent feedback</span> — turning preparation into real confidence.</p>
                 <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary -ml-5">BeBetter.ai</span> — Intelligent Career Growth Platform</p>

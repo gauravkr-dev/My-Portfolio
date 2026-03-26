@@ -46,7 +46,7 @@ export function ProjectTwo() {
       <div className={cn(`${isMobile ? "h-[300px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
         <ThreeDMarquee images={images} />
       </div>
-      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-center md:px-6 px-3 border border-primary rounded-lg">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">NextJourney</h3>
         <p className="text-justify text-muted-foreground text-sm ">NextJourney is a <span className="font-bold text-primary">full-stack</span> travel web application that helps users <span className="font-bold text-primary">explore</span> and <span className="font-bold text-primary">manage</span> travel listings. Users can <span className="font-bold text-primary">add</span>, <span className="font-bold text-primary">update</span>, or <span className="font-bold text-primary">delete</span> their own listings, browse destinations for their next journey, view locations directly on <span className="font-bold text-primary">Google Maps</span>, and share their experiences through <span className="font-bold text-primary">reviews</span>.</p>
         <p className="text-justify text-muted-foreground text-sm mt-2"><span className="font-bold text-primary">Smooth</span>, <span className="font-bold text-primary">Secure</span>, and <span className="font-bold text-primary">Scalable</span> for Choosing Destinations.</p>

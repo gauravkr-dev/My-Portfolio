@@ -45,7 +45,7 @@ export function ProjectFour() {
       <div className={cn(`${isMobile ? "h-[300px]" : "h-[500px]"} border border-primary w-full md:w-2/3 object-cover rounded-lg overflow-hidden`)}>
         <ThreeDMarquee images={images} />
       </div>
-      <div className="w-full md:w-1/3 flex flex-col justify-start items-center px-6 border border-primary rounded-lg">
+      <div className="w-full md:w-1/3 flex flex-col justify-start items-center md:px-6 px-3 border border-primary rounded-lg">
         <h3 className="text-2xl text-primary text-center font-bold mb-4 mt-2 font-serif">Open Source Contributions</h3>
         <p className="text-justify text-muted-foreground text-sm ">As a open source contributor, I actively engage in collaborative projects, enhancing software quality and functionality through <span className="text-primary font-bold">code contributions</span>, <span className="text-primary font-bold">bug fixes</span>, and <span className="text-primary font-bold">feature implementations</span>.</p>
         <div className="flex flex-wrap gap-2 mt-8 justify-center">
