@@ -56,7 +56,7 @@ export function ProjectThree() {
           ))}
         </div>
         <div className="mt-12 flex flex-col gap-4">
-          <a href="https://portfolio-silk-rho-58.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-1">
+          <a href="https://gauravkr-dev.vercel.app" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-1">
             Visit Website <ExternalLink className="inline-block ml-2 h-4 w-4" />
           </a>
           <a href="https://github.com/gauravkr-dev/Portfolio" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-background px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors mb-2">
